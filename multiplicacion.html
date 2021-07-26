@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Lista de multiplicacion</h2>
+     <p>da click en el boton para comenzar</p>
+     <button onclick="empezar()">Empezar</button>
+     
+     <script>
+         function empezar() {
+             alert("Bienvenido a la tabla de multiplicacion");
+             var numero=prompt("ingresa la tabla que quieres");
+
+             for (let contador = 1; contador <= 10 ; contador++) {
+                var resultado = contador*numero;
+                console.log("el resultado de:"+numero+"X"+contador+"="+resultado);
+                 
+             }
+         }
+     </script>
+</body>
+</html>
